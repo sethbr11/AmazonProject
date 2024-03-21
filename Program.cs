@@ -12,6 +12,8 @@ builder.Services.AddDbContext<BookstoreContext>(options =>
     }
 );
 
+builder.Services.AddScoped<IBookRepository, EFBookRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,7 +31,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute("pagination", "Projects/{pageNum}", new {Controller = "Home", action = "Index"});
+app.MapControllerRoute("pagination", "Books/{pageNum}", new {Controller = "Home", action = "Index"});
 app.MapDefaultControllerRoute();
 
 app.Run();
