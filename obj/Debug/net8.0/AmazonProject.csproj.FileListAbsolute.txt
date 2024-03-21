@@ -125,3 +125,4 @@
 /Users/sethbrock/Desktop/IS 413/FinalMissions/AmazonProject/obj/Debug/net8.0/AmazonProject.pdb
 /Users/sethbrock/Desktop/IS 413/FinalMissions/AmazonProject/obj/Debug/net8.0/AmazonProject.genruntimeconfig.cache
 /Users/sethbrock/Desktop/IS 413/FinalMissions/AmazonProject/obj/Debug/net8.0/ref/AmazonProject.dll
+/Users/sethbrock/Desktop/IS 413/FinalMissions/AmazonProject/obj/Debug/net8.0/AmazonProject.sourcelink.json
