@@ -41,7 +41,7 @@ public class PaginationTagHelper : TagHelper
                 TagBuilder tag = new TagBuilder("a");
                 tag.Attributes["href"] = urlHelper.Action(PageAction, new { pageNum = i });
 
-                if (PageClassesEnabled == true)
+                if (PageClassesEnabled)
                 {
                     tag.AddCssClass(PageClass);
                     tag.AddCssClass(i == PageModel.CurrentPage ? PageClassSelected : PageClassNormal);

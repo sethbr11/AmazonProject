@@ -25,3 +25,48 @@ body {
   --bs-bg-opacity: 1;
   background-color: rgba(255, 153, 0, var(--bs-bg-opacity)) !important; /* Using the orange color */
 }
+
+.btn-orange {
+  color: #fff;
+  background-color: #ff9900; /* New shade of orange */
+  border-color: #ff9900; /* New shade of orange */
+}
+
+.btn-orange:hover {
+  color: #fff;
+  background-color: #ff7700; /* New shade of orange for hover */
+  border-color: #ff6600; /* New shade of orange for hover */
+}
+
+.btn-check:focus + .btn-primary,
+.btn-orange:focus {
+  color: #fff;
+  background-color: #ff7700; /* New shade of orange for focus */
+  border-color: #ff6600; /* New shade of orange for focus */
+  box-shadow: 0 0 0 0.25rem rgba(255, 153, 0, 0.5); /* New shade of orange for focus */
+}
+
+.btn-check:checked + .btn-primary,
+.btn-check:active + .btn-primary,
+.btn-orange:active,
+.btn-orange.active,
+.show > .btn-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #ff6600; /* New shade of orange for checked, active, and dropdown */
+  border-color: #ff5500; /* New shade of orange for checked, active, and dropdown */
+}
+
+.btn-check:checked + .btn-orange:focus,
+.btn-check:active + .btn-orange:focus,
+.btn-orange:active:focus,
+.btn-orange.active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 153, 0, 0.5); /* New shade of orange for focus */
+}
+
+.btn-orange:disabled,
+.btn-orange.disabled {
+  color: #fff;
+  background-color: #ff9900; /* New shade of orange for disabled state */
+  border-color: #ff9900; /* New shade of orange for disabled state */
+}
